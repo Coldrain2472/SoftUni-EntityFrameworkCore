@@ -25,7 +25,7 @@ public partial class SoftUniContext : DbContext
     {
         if (!optionsBuilder.IsConfigured)
         {
-            optionsBuilder.UseSqlServer("Server=DESKTOP-85U9SF9\\SQLEXPRESS;Database=SoftUni;Integrated Security=True;Encrypt=False;");
+            optionsBuilder.UseSqlServer("Server=.\\SQLEXPRESS;Database=SoftUni;Integrated Security=True;Encrypt=False;");
         }
     }
 
