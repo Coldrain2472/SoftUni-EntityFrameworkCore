@@ -25,6 +25,5 @@ public class Town
 
     public virtual ICollection<Team> Teams { get; set; }
 
-    // added new ICollection<Player> Players because of Judge's unit tests
     public virtual ICollection<Player> Players { get; set; }
 }
