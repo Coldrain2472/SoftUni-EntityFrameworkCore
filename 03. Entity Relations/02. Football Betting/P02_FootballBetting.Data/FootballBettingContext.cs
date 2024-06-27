@@ -30,7 +30,7 @@ public class FootballBettingContext : DbContext
     {
         if (!optionsBuilder.IsConfigured)
         {
-            optionsBuilder.UseSqlServer("Server=DESKTOP-85U9SF9\\SQLEXPRESS;Database=FootballBookmakerSystem;Integrated Security=True;Encrypt=False;");
+            optionsBuilder.UseSqlServer("Server=.\\SQLEXPRESS;Database=FootballBookmakerSystem;Integrated Security=True;Encrypt=False;");
             base.OnConfiguring(optionsBuilder);
         }
     }
