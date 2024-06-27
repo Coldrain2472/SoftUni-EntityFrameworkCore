@@ -35,7 +35,6 @@ public class Player
 
     public ICollection<PlayerStatistic> PlayersStatistics { get; set; }
 
-    // added new Town propperties because of Judge's Unit Tests
     [ForeignKey(nameof(Town))]
     public int TownId { get; set; }
 
