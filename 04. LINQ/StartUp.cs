@@ -11,20 +11,19 @@
     {
         public static void Main()
         {
-            MusicHubDbContext context =
-                new MusicHubDbContext();
+            MusicHubDbContext context = new MusicHubDbContext();
 
             DbInitializer.ResetDatabase(context);
 
-            string output = string.Empty;
+            // string output = string.Empty;
 
-            //Test 02.Export Albums Info
+            // 02.Export Albums Info
             //output = ExportAlbumsInfo(context, 9);
 
-            //Test 03.Export Songs Above Duration
-            output = ExportSongsAboveDuration(context, 4);
+            // 03.Export Songs Above Duration
+            // output = ExportSongsAboveDuration(context, 4);
 
-            Console.WriteLine(output);
+            // Console.WriteLine(output);
             //Test your solutions here
         }
 
@@ -108,6 +107,7 @@
             foreach (var song in songs)
             {
                 songsCounter++;
+
                 sb.AppendLine($"-Song #{songsCounter}");
                 sb.AppendLine($"---SongName: {song.SongName}");
                 sb.AppendLine($"---Writer: {song.WriterName}");
