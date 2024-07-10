@@ -14,7 +14,7 @@ public class StartUp
     {
         CarDealerContext context = new CarDealerContext();
 
-        string inputXml = File.ReadAllText("../../../Datasets/suppliers.xml");
+        // string inputXml = File.ReadAllText("../../../Datasets/suppliers.xml");
 
         string result = GetSalesWithAppliedDiscount(context);
 
